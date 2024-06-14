@@ -1,0 +1,153 @@
+
+name: plant_catalogue
+description: "A new Flutter project."
+# La ligne suivante empêche le package d'être accidentellement publié sur pub.dev en utilisant `flutter pub publish`. C'est préférable pour les packages privés.
+publish_to: 'none' # Supprimez cette ligne si vous souhaitez publier sur pub.dev
+
+# Les lignes suivantes définissent la version et le numéro de build de votre application.
+# Un numéro de version est composé de trois nombres séparés par des points, comme 1.2.43
+# suivi éventuellement d'un numéro de build séparé par un +.
+# La version et le numéro de build peuvent être remplacés par flutter
+# build en spécifiant --build-name et --build-number, respectivement.
+# Sur Android, build-name est utilisé comme versionName tandis que build-number est utilisé comme versionCode.
+# Pour en savoir plus sur la numérotation des versions Android, consultez https://developer.android.com/studio/publish/versioning
+# Sur iOS, build-name est utilisé comme CFBundleShortVersionString tandis que build-number est utilisé comme CFBundleVersion.
+# Pour en savoir plus sur la numérotation des versions iOS, consultez
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# Sur Windows, build-name est utilisé comme les parties majeure, mineure et de correctif
+# des versions du produit et du fichier tandis que build-number est utilisé comme suffixe de build.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+# Les dépendances spécifient les autres packages dont votre package a besoin pour fonctionner.
+# Pour mettre à jour automatiquement les dépendances de votre package vers les dernières versions
+# envisagez d'exécuter `flutter pub upgrade --major-versions`. Alternativement,
+# les dépendances peuvent être mises à jour manuellement en changeant les numéros de version ci-dessous
+# par les dernières versions disponibles sur pub.dev. Pour voir quelles dépendances ont de nouvelles
+# versions disponibles, exécutez `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  email_validator: ^2.0.1
+  flutter_local_notifications: ^8.2.0
+  timezone: ^0.8.0
+  flutter_localizations:
+    sdk: flutter
+  easy_localization: ^3.0.0
+  intl: ^0.18.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  intl_translation: ^0.18.1
+  intl_utils: ^2.5.0
+
+
+  # Le package "flutter_lints" ci-dessous contient un ensemble de lints recommandés pour
+  # encourager les bonnes pratiques de codage. L'ensemble de lint fourni par le package est
+  # activé dans le fichier `analysis_options.yaml` situé à la racine de votre
+  # package. Consultez ce fichier pour obtenir des informations sur la désactivation de lint
+  # spécifiques et l'activation d'autres.
+  flutter_lints: ^3.0.0
+
+# Pour des informations sur la partie générique Dart de ce fichier, consultez la
+# page suivante: https://dart.dev/tools/pub/pubspec
+
+# La section suivante est spécifique aux packages Flutter.
+flutter:
+
+  # La ligne suivante garantit que la police Material Icons est
+  # incluse avec votre application, afin que vous puissiez utiliser les icônes de
+  # la classe material Icons.
+  uses-material-design: true
+
+  # Pour ajouter des assets à votre application, ajoutez une section assets, comme ceci:
+  assets:
+  - assets/bell_pepper.jpg
+  - assets/bamboo.jpg
+  - assets/African Eggplant.jpg
+  - assets/Apple.jpg
+  - assets/Baobab.jpg
+  - assets/basil.jpg
+  - assets/Bay Laurel.jpg
+  - assets/Cabbage.jpg
+  - assets/Carrot.jpg
+  - assets/Coconut.jpg
+  - assets/Ginseng.jpg
+  - assets/Guava.jpg
+  - assets/hamomile.jpg
+  - assets/Lavende.jpg
+  - assets/Lemon Balm.jpg
+  - assets/Mango.jpg
+  - assets/Mint.jpg
+  - assets/Neem.jpg
+  - assets/Nettle.jpg
+  - assets/Orchid.jpg
+  - assets/Palm.jpg
+  - assets/Papaya.jpg
+  - assets/Parsley.jpg
+  - assets/Peace Lily.jpg
+  - assets/Perpermint.jpeg
+  - assets/rosary.jpg
+  - assets/rose cubitus.jpg
+  - assets/Sage.jpg
+  - assets/Snake Plan.jpg
+  - assets/Sorghum.jpg
+  - assets/Spider Plant.jpg
+  - assets/Thyme.jpg
+  - assets/Yam.jpg
+  - assets/Blueberry.jpg
+  - assets/Azalea.jpg
+  - assets/Daffodil3.jpg
+  - assets/Hydrangea.jpg
+  - assets/Lilac.jpg
+  - assets/Marigold.jpg
+  - assets/Peony.jpg
+  - assets/Pineapple.jpg
+  - assets/Rosemary.jpg
+  - assets/Strawberry.jpg
+  - assets/Tulip1.jpg
+  - assets/Carcus.jpeg
+  - assets/chamoli.jpg
+  - assets/Hibiscus.jpg
+  - assets/cherry.jpg
+  - assets/cucumber.jpg
+  - assets/Daffodil.jpg
+  - assets/Hydrangea.jpg
+  - assets/jasmine.jpg
+  - assets/lettuce.jpg
+  - assets/oregano.jpg
+  - assets/pumpkin.jpg
+  - assets/sunflower.jpg
+  - assets/kinkeliba.jpg
+  - assets/aloe vera.jpg
+  - assets/calendula.jpg
+  - assets/eucalyptus.jpg
+  - assets/Hibiscus.jpg
+  - assets/spinach.jpg
+  - assets/tomato.jpg
+  - assets/dandelion.jpg
+  - assets/Peace Lily.jpg
+
+
+
+  # Un asset image peut faire référence à un ou plusieurs "variants" spécifiques à la résolution, voir
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # Pour plus de détails sur l'ajout d'assets à partir de dépendances de packages, consultez
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # Pour ajouter des polices personnalisées à votre application, ajoutez une section fonts ici,
+  # dans cette section "flutter". Chaque entrée de cette liste doit avoir une
+  # clé "family" avec le nom de la famille de polices, et une clé "fonts" avec une
+  # liste donnant l'asset et d'autres descripteurs de la police. Par exemple:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+ 
